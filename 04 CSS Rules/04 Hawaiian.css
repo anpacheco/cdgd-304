@@ -1,0 +1,23 @@
+p{  font-family: parry ; 
+    color: mediumpurple ; 
+    background-color: white ; 
+    font-size: 14px ;
+    line-height: 20px ; }
+
+h1{ font-family: yellowtail ;
+    color: yellow ;
+    background-color: lightblue ;
+    font-size: 40px ; }
+
+h2{ font-family: mark ;
+    color: hotpink; }
+
+h3{ font-family: mark ;
+    color: hotpink ; }
+
+a:link { font-family: mark ; 
+        text-decoration: none ;
+        color: darkturquoise ; }
+
+a:hover { color: coral;
+            font-weight: 800 ; }
