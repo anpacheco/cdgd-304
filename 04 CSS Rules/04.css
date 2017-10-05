@@ -1,0 +1,21 @@
+p{  font-family: halis r ; 
+    color: magenta; 
+    background-color: black ; 
+    font-size: 14px ;
+    line-height: 20px ; }
+
+h1{ font-family: blowbrush ;
+    color: chartreuse;
+    background-color: black ;
+    font-size: 60px ; }
+
+h2{ font-family: acrom ;
+    color: rebeccapurple ; }
+
+h3{ font-family: acrom ; }
+
+a:link { font-family: bryant ; 
+        text-decoration: none ; }
+
+a:hover { color: aqua ;
+            font-weight: bold ; }
