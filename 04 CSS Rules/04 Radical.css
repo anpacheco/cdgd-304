@@ -1,0 +1,24 @@
+p{  font-family: Sabon LT Std ; 
+    color: black ; 
+    background-color: white ; 
+    font-size: 14px ;
+    line-height: 16px ; }
+
+h1{ font-family: Interstate ;
+    color: #99C525 ;
+    background-color: white ;
+    font-size: 40px ; }
+
+h2{ font-family: Interstate ;
+    color: #00AFD8 ; }
+
+h3{ font-family: Interstate ;
+    color: #00AFD8 ; 
+    font-size: 20px ; }
+
+a:link { font-family: Interstate ;
+        color: black ;
+        text-decoration: none ; }
+
+a:hover { color: #99c525 ;
+        font-weight: bold ; }
