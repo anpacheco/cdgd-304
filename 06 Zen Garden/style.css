@@ -56,12 +56,12 @@ abbr {
 
 
 /* specific divs */
-.page-wrapper { 
+/*.page-wrapper { 
 	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
 	padding: 0 175px 0 110px;  
 	margin: 0; 
 	position: relative;
-	}
+	}*/
 
 .intro { 
 	min-width: 470px;
@@ -69,32 +69,18 @@ abbr {
 	}
 
 header h1 { 
-    font-family: 'pt sans caption';
-    text-transform: uppercase;
-	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+    font-family: 'pt serif caption';
+    font-size: 10pt;
+    background-color: #E5BEED;
+    color: #7D5C65;
 	}
 header h2 { 
     font-family: 'pt sans caption', sans-serif;
     text-transform: uppercase;
-	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
+    color: #FFFFFF;
+    background-color: #E5BEED;
+    font-size: 80pt;
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
 	}
 header {
     font-family: 'pt sans caption', sans-serif;
