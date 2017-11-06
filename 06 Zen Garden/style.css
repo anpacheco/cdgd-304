@@ -16,7 +16,7 @@ html {
 body { 
     background-color: #E5BEED;
 	line-height: 1.88889;
-	color: #555753; 
+	color: #7D5C65; 
 	margin: 0; 
 	padding: 0;
 	}
@@ -24,6 +24,7 @@ p {
     font-family: 'pt serif';
 	margin-top: 0; 
 	text-align: justify;
+    font-size: 10pt;
 	}
 h3 { 
     font-family: 'pt sans caption';
@@ -38,7 +39,7 @@ a:link {
 	font-weight: bold; 
     font-style: italic;
 	text-decoration: none; 
-	color: #B7A5DF;
+	color: #7D5C65;
 	}
 a:visited { 
     font-family: 'pt serif';
@@ -48,7 +49,6 @@ a:visited {
 	}
 a:hover, a:focus, a:active { 
 	text-decoration: underline; 
-	color: #9685BA;
 	}
 abbr {
 	border-bottom: none;
@@ -164,6 +164,7 @@ footer a:link, footer a:visited {
 	padding: 0;
 	}
 .sidebar li {
+    font-family: 'pt sans caption', sans-serif;
 	line-height: 1.3em; 
 	display: block; 
 	padding-top: 5px; 
@@ -171,7 +172,7 @@ footer a:link, footer a:visited {
 	list-style-type: none;
 	}
 .sidebar li a:link {
-	color: #988F5E;
+	color: #7D5C65;
 	}
 .sidebar li a:visited {
 	color: #B3AE94;
