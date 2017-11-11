@@ -29,7 +29,8 @@ p {
 h3 { 
     font-family: 'pt sans caption';
     text-transform: uppercase;
-	font: bold, 1.4em, 'pt sans caption', sans-serif;
+	font: bold, 'pt sans caption', sans-serif;
+    font-size: 40pt;
 	letter-spacing: 1px; 
 	margin-bottom: 0; 
 	color: #FFFFFF;
@@ -69,17 +70,22 @@ abbr {
 	}
 
 header h1 { 
+    margin: 10px 0px 0px 75px;
     font-family: 'pt serif caption';
-    font-size: 10pt;
+    font-size: 20px;
     background-color: #E5BEED;
     color: #7D5C65;
+    font-weight: 100;
 	}
 header h2 { 
+    margin: 25px 125px 75px 75px;
+    line-height: 145px;
+    float: right;
     font-family: 'pt sans caption', sans-serif;
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #E5BEED;
-    font-size: 80pt;
+    font-size: 120px;
 
 	}
 header {
@@ -91,14 +97,14 @@ header {
 
 .summary {
 	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
-	float: left;
+	margin: 10px 20px 20px 75px; 
+	width: 700px; 
 	}
 .summary p {
     font-family: 'pt serif', serif;
-	font: italic 1.1em/2.2; 
-	text-align: center;
+	font: italic;
+    font-size: 20px;
+    line-height: 35px;
 	}
 
 .preamble {
