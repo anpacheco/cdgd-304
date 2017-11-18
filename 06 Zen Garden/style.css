@@ -33,7 +33,7 @@ h3 {
 	font: bold, 'pt sans caption', sans-serif;
     font-size: 40pt;
 	letter-spacing: 3px; 
-    margin: 50px 0px 0px 75px;
+    margin: 75px 0px 0px 75px;
 	color: #FFFFFF;
 	}
 a:link { 
@@ -47,7 +47,7 @@ a:visited {
     font-family: 'pt serif';
 	font-weight: italic; 
 	text-decoration: none; 
-	color: #D4CDDC;
+	color: #736B92;
 	}
 a:hover, a:focus, a:active { 
 	text-decoration: underline; 
@@ -106,6 +106,7 @@ header {
 	font: italic;
     font-size: 20px;
     line-height: 35px;
+    margin: 0px 75px 0px 75px,
 	}
 
 .preamble {
@@ -118,7 +119,8 @@ header {
 	}
 
 footer { 
-	text-align: center; 
+	text-align: center;
+    margin: 50px 75px;
 	}
 footer a:link, footer a:visited { 
 	margin-right: 20px; 
@@ -162,8 +164,8 @@ footer a:link, footer a:visited {
 .sidebar li {
     font-family: 'pt sans caption', sans-serif;
     font-weight: bold;
-    font-size: 40px;
-	line-height: 100px; 
+    font-size: 25px;
+	line-height: 50px; 
 	display: block; 
 	padding-top: 5px; 
 	margin-bottom: 5px;
@@ -174,7 +176,7 @@ footer a:link, footer a:visited {
     font-style: normal;
 	}
 .sidebar li a:visited {
-	color: #B3AE94;
+	color: #736B92;
 	}
 
 
@@ -185,3 +187,19 @@ footer a:link, footer a:visited {
 	width: 148px; 
 	height: 110px;
 	}
+
+.explanation {
+    background-color: #95A7EB;
+    color: #736B92;
+    padding: 25px 0px 100px 0px;  
+}
+
+.preamble{
+    background-color: #A8A6E6;
+    color: #736B92;
+    padding: 25px 0px 100px 0px;
+}
+
+.supporting{
+    padding: 0px;
+}
