@@ -58,12 +58,6 @@ abbr {
 
 
 /* specific divs */
-/*.page-wrapper { 
-	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
-	position: relative;
-	}*/
 
 .intro { 
 	min-width: 470px;
@@ -263,4 +257,3 @@ footer a:link, footer a:visited {
 .zen-resources a:link{
     font-size: 15px;
 }
-
