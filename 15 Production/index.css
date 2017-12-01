@@ -1,0 +1,84 @@
+body {
+    background: #000;
+}
+.video-container {
+    position: relative;
+}
+video {
+    height: auto;
+    vertical-align: middle;
+    width: 100%;
+}
+.overlay-desc {
+    background: rgba(0,0,0,0);
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 9vw;
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.logo {
+    margin-top: -300px;
+    margin-right: 125px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    font-family: 'Lato', sans-serif;
+    background: rgba(0,0,0,0);
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    padding: 30px;
+}
+
+a: hovered {
+    text-decoration: underline;
+}
+
+li {
+    float: left;
+}
+
+.social-media {
+    background: rgba(0,0,0,0);
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 500px;
+}
+
+.social-media img {
+    padding: 5px;
+    margin: -20px;
+}
