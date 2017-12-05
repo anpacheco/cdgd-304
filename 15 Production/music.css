@@ -1,5 +1,95 @@
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "logo links";
+}
+
+.box bandcamp{
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "bc1 bc2";
+}
+
+content{
+    margin-left: 60px;
+}
+
+.wrapper{
+    margin-right: 30px;
+}
+
+.split_bandcamp {
+    grid-area: bc1;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 150px 200px 150px 100px;
+    grid-template-rows: 37.5px 37.5px 37.5px 37.5px;
+    grid-template-areas: 
+        "split split2 joy joy2"
+        "split split2 joy joy2"
+        "split split2 joy joy2"
+        "split split2 joy joy2";
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+#splitimg{
+    grid-area: split;
+    width: 150px;
+    height: 150px;
+    background: url(Content/split_bandcamp.jpg) no-repeat;
+    opacity: 0.5;
+}
+
+#splitimg:hover{
+    opacity: 1.0;
+}
+
+#ep_name {
+    grid-area: split2;
+    grid-row: 1/2;
+    padding-left: 15px;
+}
+
+#year {
+    grid-area: split2;
+    grid-row: 3/4;
+    margin-top: -25px;
+    padding-left: 15px;
+}
+
+
+#joyimg{
+    grid-area: joy;
+    width: 150px;
+    height: 150px;
+    background: url(Content/joy_bandcamp.jpg) no-repeat;
+    opacity: 0.5;
+}
+
+#joyimg:hover{
+    opacity: 1.0;
+}
+
+#ep_name2 {
+    grid-area: joy2;
+    grid-row: 1/2;
+    padding-left: 15px;
+}
+
+#year2 {
+    grid-area: joy2;
+    grid-row: 3/4;
+    margin-top: -25px;
+    padding-left: 15px;
+}
+
 body {
     background: #000;
+    margin: 0;
 }
 
 .c p {
@@ -42,14 +132,6 @@ ul {
     padding: 0;
 }
 
-/*.nav-bar {
-font-family: 'Lato', sans-serif;
-background: rgba(0,0,0,0);
-position: absolute;
-top: 0; right: 0; bottom: 0; left: 0;
-display: flex;
-}*/
-
 a {
     color: #FFF;
     text-decoration: none;
@@ -64,10 +146,6 @@ a:hover {
 
 li {
     float: left;
-}
-
-body {
-    margin: 40px;
 }
 
 .wrapper {
@@ -85,43 +163,18 @@ body {
 
 }
 
-.a {
+.logo {
     grid-column: 1/2;
     grid-row: 1/2;
     border: 0;
+    padding-top: 35px;
+    margin-left: 30px;
 }
-.b {
+.links {
     grid-column: 3/10;
     grid-row: 1/2;
     font-family: 'Lato', sans-serif;
 
-}
-.c {
-    grid-column: 1/10;
-    grid-row: ;
-}
-.d {
-    grid-column: 1/10;
-    grid-row: ;
-}
-.e {
-    grid-column: 1/10;
-    
-}
-.joy_bandcamp {
-    
-}
-
-.split_bandcamp {
-    
-}
-
-.joy_spotify {
-    
-}
-
-.split_spotify {
-    
 }
 
 .e a: hovered {

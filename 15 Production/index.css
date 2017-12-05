@@ -60,7 +60,7 @@ a {
     padding: 30px;
 }
 
-a: hovered {
+.nav-bar a:hover {
     text-decoration: underline;
 }
 
@@ -68,17 +68,16 @@ li {
     float: left;
 }
 
-.social-media {
-    background: rgba(0,0,0,0);
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 500px;
-}
-
 .social-media img {
     padding: 5px;
     margin: -20px;
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
