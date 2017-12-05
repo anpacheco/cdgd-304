@@ -1,4 +1,4 @@
-body {
+/*body {
     background: #000;
 }
 
@@ -43,14 +43,6 @@ ul {
     margin: 0;
     padding: 0;
 }
-
-/*.nav-bar {
-font-family: 'Lato', sans-serif;
-background: rgba(0,0,0,0);
-position: absolute;
-top: 0; right: 0; bottom: 0; left: 0;
-display: flex;
-}*/
 
 a {
     color: #FFF;
@@ -128,4 +120,386 @@ body {
 
 .e a: link {
     font-size: 30px;
+}
+*/
+
+/* --------------------MAIN CSS-------------------- */
+
+body {
+    background: #000;
+    margin: 0;
+}
+
+content{
+    margin-left: 60px;
+}
+
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 20px;
+}
+
+a:hover { 
+    text-decoration: underline; 
+}
+
+.p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 10% [repeat 10];
+    grid-template-rows: 10% [repeat 10];
+    background-color: #000;
+    margin-right: 30px;
+}
+
+.box {
+    background-color: #000;
+    color: #fff;
+    padding: 0px 20px 20px 20px;
+
+}
+
+/* --------------------H STYLES-------------------- */
+
+h1 {
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 9vw;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    color: #FFF;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #FFF;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    margin-top: -12px;
+    color: #FFF;
+}
+
+h5 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* --------------------HEADER CSS-------------------- */
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "logo links";
+}
+
+.logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 0;
+    padding-top: 35px;
+    margin-left: 30px;
+    background: url(Content/FA_logo_nav.png) no-repeat;
+    width: 150px;
+    height: 40px;
+}
+.links {
+    grid-column: 3/10;
+    grid-row: 1/2;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.current_page{
+    background-color: #FFF;
+    color: #000;
+    padding: 5px 10px;
+    margin: 15px;
+}
+
+.current_page:hover{
+    text-decoration: none;
+}
+
+/* --------------------UPCOMING DATES-------------------- */
+
+#ud{
+    display: grid;
+    grid-template-columns: 475px 300px;
+    grid-template-rows: repeat(5, 75px);
+    grid-template-areas:
+        "title ."
+        "photo date"
+        "photo location"
+        "photo see_location"
+        "photo .";
+    padding-bottom: 40px;
+    border: solid; 
+    border-color: #FFF;
+    border-width: 0px 0px 1px 0px;
+    
+}
+
+#upcoming-dates{
+    grid-area: photo;
+    width: 475px;
+    height: 285px;
+    grid-column: 1/2;
+    grid-row: 2/5;
+    margin-top: 20px;
+}
+
+#ud h2 {
+    grid-area: title;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#ud h3 {
+    grid-area: date;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: 30px;
+}
+
+#ud h4{
+    grid-area: location;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+#ud h5{
+    grid-area: see_location;
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin-top: 150px;
+    margin-left: 15px
+}
+
+/* --------------------SPLIT SPOTIFY-------------------- */
+
+.box spotify{
+    display: grid;
+    align-content: left;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "s1"
+        "s2";
+}
+
+.split_spotify {
+    grid-area: s1;
+    display: grid;
+    align-content: left;
+    grid-template-columns: 320px 320px;
+    grid-template-rows: repeat(8, 64px);
+    grid-template-areas: 
+        "ssplit info"
+        "ssplit info"
+        "ssplit plug"
+        "ssplit plug"
+        "ssplit plug"
+        ". plug"
+        ". plug"
+        ". plug"
+        ". plug";
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+#ssplitimg{
+    grid-area: ssplit;
+    grid-column: 1/2;
+    grid-row: 1/6;
+}
+
+#sep_name {
+    grid-area: info;
+    grid-row: 1/2;
+    padding-left: 15px;
+}
+
+#syear {
+    grid-area: info;
+    grid-row: 2/3;
+    padding-left: 15px;
+}
+
+#plug {
+    grid-area: plug;
+    grid-column: 2/3;
+    grid-row: 3/8;
+    margin-top: -35px;
+    padding-left: 15px;
+}
+
+/* --------------------JOY SPOTIFY-------------------- */
+
+.joy_spotify {
+    grid-area: s2;
+    display: grid;
+    align-content: left;
+    grid-template-columns: 320px 320px;
+    grid-template-rows: repeat(9, 64px);
+    grid-template-areas: 
+        "sjoy info2"
+        "sjoy info2"
+        "sjoy plug2"
+        "sjoy plug2"
+        "sjoy plug2"
+        ". plug2"
+        ". plug2"
+        ". plug2"
+        ". plug2";
+}
+
+#sjoyimg{
+    grid-area: sjoy;
+    grid-column: 1/2;
+    grid-row: 1/6;
+}
+
+#sep_name2 {
+    grid-area: info2;
+    grid-row: 1/2;
+    padding-left: 15px;
+}
+
+#syear2 {
+    grid-area: info2;
+    grid-row: 2/3;
+    padding-left: 15px;
+}
+
+#plug2 {
+    grid-area: plug2;
+    grid-column: 2/3;
+    grid-row: 3/9;
+    margin-top: -35px;
+    padding-left: 15px;
+}
+
+/* --------------------YOUTUBE CSS-------------------- */
+
+.e {
+    grid-area: youtube;
+    display: grid;
+    align-content: left;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 312px;
+    grid-template-areas: 
+        "title ylink"
+        "video video";
+    padding-top: 0px;
+    margin-top: -70px;
+    border: solid; 
+    border-color: #FFF;
+    border-width: 1px 0px 0px 0px;
+}
+
+#name{
+    grid-area: title;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#ylink {
+    grid-area: ylink;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-top: 50px;
+    margin-left: -40px;
+}
+
+#video {
+    grid-area: video;
+    grid-row: 2/3;
+    margin-top: -60px;
+}
+
+.e a: hovered {
+    text-decoration: underline;
+}
+
+/* --------------------FOOTER CSS-------------------- */
+
+.footer{
+    width: 100%;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "label . . . sm_links";
+    padding: 10px 0px 10px 85px;
+    margin-top: 10px;
+    border: solid;
+    border-color: #FFF;
+    border-width: 1px 0px 0px 0px;
+}
+
+#label{
+    grid-area: label;
+    grid-column: 1/2;
+}
+
+#sm_links{
+    grid-area: sm_links;
+    grid-column: 5/6;
+}
+
+.footer img{
+    margin: -10px;
+}
+
+.footer p{
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer li {
+    float: left;
 }
