@@ -1,0 +1,487 @@
+/* --------------------MAIN CSS-------------------- */
+
+body {
+    background: #000;
+    margin: 0;
+}
+
+content{
+    margin-left: 60px;
+}
+
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 20px;
+}
+
+a:hover { 
+    text-decoration: underline; 
+}
+
+.p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 10% [repeat 10];
+    grid-template-rows: 10% [repeat 10];
+    background-color: #000;
+}
+
+.box {
+    background-color: #000;
+    color: #fff;
+
+}
+
+/* --------------------H STYLES-------------------- */
+
+h1 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 9vw;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    margin-top: -12px
+}
+
+/* --------------------HEADER CSS-------------------- */
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "logo links";
+    margin: 20px 85px -30px 30px;
+}
+
+.logo_1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 0;
+    margin-top: 15px;
+    margin-left: 30px;
+    background: url(Content/FA_logo_nav.png) no-repeat;
+    width: 150px;
+    height: 40px;
+}
+
+.links {
+    grid-column: 3/10;
+    grid-row: 1/2;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.current_page{
+    background-color: #FFF;
+    color: #000;
+    padding: 5px 10px;
+    margin: 15px;
+}
+
+.current_page:hover{
+    text-decoration: none;
+}
+
+/* --------------------PHOTOS CSS-------------------- */
+
+.photos h2{
+    margin-left: 85px;
+}
+
+.box photos{
+    display: grid;
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-areas:
+        "p1"
+        "p2"
+        "p3"
+        "p4"
+        "p5"
+        "p6"
+        "p7"
+        "p8"
+        "p9"
+        "p10"
+        "p11";
+}
+
+#photo1{
+    grid-area: p1;
+    display: grid;
+    grid-template-rows: 880px 40px 40px;
+    grid-template-areas: 
+        "image1"
+        "date1"
+        "person1";
+    margin-bottom: 40px;
+}
+
+#photo1 img{
+    grid-area: image1;
+    width: 100%;
+}
+
+#photo1 h3{
+    grid-area: date1;
+    margin: 0px 85px;
+}
+
+#photo1 h4{
+    grid-area: person1;
+    margin: 0px 85px;
+    
+}
+
+#photo2{
+    grid-area: p2;
+    display: grid;
+    grid-template-rows: 1610px 40px 40px;
+    grid-template-areas: 
+        "image2"
+        "date2"
+        "person2";
+    margin-bottom: 40px;
+}
+
+#photo2 img{
+    grid-area: image2;
+    width: 100%;
+}
+
+#photo2 h3{
+    grid-area: date2;
+    margin: 0px 85px;
+}
+
+#photo2 h4{
+    grid-area: person2;
+    margin: 0px 85px;
+}
+
+#photo3{
+    grid-area: p3;
+    display: grid;
+    grid-template-rows: 1610px 40px 40px;
+    grid-template-areas: 
+        "image3"
+        "date3"
+        "person3";
+    margin-bottom: 40px;
+}
+
+#photo3 img{
+    grid-area: image3;
+    width: 100%;
+}
+
+#photo3 h3{
+    grid-area: date3;
+    margin: 0px 85px;
+}
+
+#photo3 h4{
+    grid-area: person3;
+    margin: 0px 85px;
+}
+
+#photo4{
+    grid-area: p4;
+    display: grid;
+    grid-template-rows: 860px 40px 40px;
+    grid-template-areas: 
+        "image4"
+        "date4"
+        "person4";
+    margin-bottom: 40px;
+}
+
+#photo4 img{
+    grid-area: image4;
+    width: 100%;
+}
+
+#photo4 h3{
+    grid-area: date4;
+    margin: 0px 85px;
+}
+
+#photo4 h4{
+    grid-area: person4;
+    margin: 0px 85px;
+    
+}
+
+#photo5{
+    grid-area: p5;
+    display: grid;
+    grid-template-rows: 850px 40px 40px;
+    grid-template-areas: 
+        "image5"
+        "date5"
+        "person5";
+    margin-bottom: 40px;
+}
+
+#photo5 img{
+    grid-area: image5;
+    width: 100%;
+}
+
+#photo5 h3{
+    grid-area: date5;
+    margin: 0px 85px;
+}
+
+#photo5 h4{
+    grid-area: person5;
+    margin: 0px 85px;
+    
+}
+
+#photo6{
+    grid-area: p6;
+    display: grid;
+    grid-template-rows: 960px 40px 40px;
+    grid-template-areas: 
+        "image6"
+        "date6"
+        "person6";
+    margin-bottom: 40px;
+}
+
+#photo6 img{
+    grid-area: image6;
+    width: 100%;
+}
+
+#photo6 h3{
+    grid-area: date6;
+    margin: 0px 85px;
+}
+
+#photo6 h4{
+    grid-area: person6;
+    margin: 0px 85px;
+    
+}
+
+#photo7{
+    grid-area: p7;
+    display: grid;
+    grid-template-rows: 880px 40px 40px;
+    grid-template-areas: 
+        "image7"
+        "date7"
+        "person7";
+    margin-bottom: 40px;
+}
+
+#photo7 img{
+    grid-area: image7;
+    width: 100%;
+}
+
+#photo7 h3{
+    grid-area: date7;
+    margin: 0px 85px;
+}
+
+#photo7 h4{
+    grid-area: person7;
+    margin: 0px 85px;
+    
+}
+
+#photo8{
+    grid-area: p8;
+    display: grid;
+    grid-template-rows: 870px 40px 40px;
+    grid-template-areas: 
+        "image8"
+        "date8"
+        "person8";
+    margin-bottom: 40px;
+}
+
+#photo8 img{
+    grid-area: image8;
+    width: 100%;
+}
+
+#photo8 h3{
+    grid-area: date8;
+    margin: 0px 85px;
+}
+
+#photo8 h4{
+    grid-area: person8;
+    margin: 0px 85px;
+    
+}
+
+#photo9{
+    grid-area: p9;
+    display: grid;
+    grid-template-rows: 970px 40px 40px;
+    grid-template-areas: 
+        "image9"
+        "date9"
+        "person9";
+    margin-bottom: 40px;
+}
+
+#photo9 img{
+    grid-area: image9;
+    width: 100%;
+}
+
+#photo9 h3{
+    grid-area: date9;
+    margin: 0px 85px;
+}
+
+#photo9 h4{
+    grid-area: person9;
+    margin: 0px 85px;
+    
+}
+
+#photo10{
+    grid-area: p10;
+    display: grid;
+    grid-template-rows: 820px 40px 40px;
+    grid-template-areas: 
+        "image10"
+        "date10"
+        "person10";
+    margin-bottom: 40px;
+}
+
+#photo10 img{
+    grid-area: image10;
+    width: 100%;
+}
+
+#photo10 h3{
+    grid-area: date10;
+    margin: 0px 85px;
+}
+
+#photo10 h4{
+    grid-area: person10;
+    margin: 0px 85px;
+    
+}
+
+#photo11{
+    grid-area: p11;
+    display: grid;
+    grid-template-rows: 870px 40px 40px;
+    grid-template-areas: 
+        "image11"
+        "date11"
+        "person11";
+    margin-bottom: 40px;
+}
+
+#photo11 img{
+    grid-area: image11;
+    width: 100%;
+}
+
+#photo11 h3{
+    grid-area: date11;
+    margin: 0px 85px;
+}
+
+#photo11 h4{
+    grid-area: person11;
+    margin: 0px 85px;
+    
+}
+
+/* --------------------FOOTER CSS-------------------- */
+
+.footer{
+    width: 100%;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "label . . . sm_links";
+    padding: 10px 0px 10px 85px;
+    margin-top: 10px;
+    padding-right: 30px;
+    border: solid;
+    border-color: #FFF;
+    border-width: 1px 0px 0px 0px;
+}
+
+#label{
+    grid-area: label;
+    grid-column: 1/2;
+}
+
+#sm_links{
+    grid-area: sm_links;
+    grid-column: 5/6;
+}
+
+.footer img{
+    margin: -10px;
+}
+
+.footer p{
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer li {
+    float: left;
+}

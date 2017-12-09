@@ -1,128 +1,3 @@
-/*body {
-    background: #000;
-}
-
-h1 {
-    color: white;
-    font-family: 'Lato', sans-serif;
-    font-size: 9vw;
-    text-align: center;
-}
-
-h2 {
-    font-family: 'Lato', sans-serif;
-    font-size: 30px;
-}
-
-h3 {
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-}
-
-h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    font-size: 16px;
-    margin-top: -12px
-}
-
-h5 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 16px;
-}
-
-main {
-    margin: 0 auto;
-    width: 80%;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    color: #FFF;
-    text-decoration: none;
-    font-size: 16px;
-    display: block;
-    padding: 20px;
-}
-
-a:hover { 
-    text-decoration: underline; 
-}
-
-li {
-    float: left;
-}
-
-body {
-    margin: 40px;
-}
-
-.wrapper {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 10% [repeat 10];
-    grid-template-rows: 10% [repeat 10];
-    background-color: #000;
-}
-
-.box {
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-
-}
-
-.a {
-    grid-column: 1/2;
-    grid-row: 1/2;
-    border: 0;
-}
-.b {
-    grid-column: 3/10;
-    grid-row: 1/2;
-    font-family: 'Lato', sans-serif;
-
-}
-.c {
-    grid-column: 1/10;
-    grid-row: ;
-}
-.d {
-    grid-column: 1/10;
-    grid-row: ;
-}
-.e {
-    grid-column: 1/10;
-    
-}
-
-.e a: hovered {
-    text-decoration: underline;
-}
-
-.footer {
-    color: #FFF;
-    font-family: 'Lato', sans-serif;
-    font-size: 12px;
-    font-weight: 300;
-}
-
-.footer img {
-    padding: 2px
-}
-
-.e a: link {
-    font-size: 30px;
-}
-*/
-
 /* --------------------MAIN CSS-------------------- */
 
 body {
@@ -131,7 +6,7 @@ body {
 }
 
 content{
-    margin-left: 60px;
+    margin-left: 80px;
 }
 
 main {
@@ -225,18 +100,21 @@ header{
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
         "logo links";
+    margin-top: 20px;
+    margin-bottom: -50px;
 }
 
-.logo {
+.logo_1 {
     grid-column: 1/2;
     grid-row: 1/2;
     border: 0;
-    padding-top: 35px;
+    margin-top: 15px;
     margin-left: 30px;
     background: url(Content/FA_logo_nav.png) no-repeat;
     width: 150px;
     height: 40px;
 }
+
 .links {
     grid-column: 3/10;
     grid-row: 1/2;
@@ -267,11 +145,10 @@ header{
         "photo location"
         "photo see_location"
         "photo .";
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     border: solid; 
     border-color: #FFF;
-    border-width: 0px 0px 1px 0px;
-    
+    border-width: 0px 0px 1px 0px; 
 }
 
 #upcoming-dates{
@@ -301,7 +178,7 @@ header{
     grid-column: 2/3;
     grid-row: 3/4;
     margin-left: 30px;
-    margin-top: -20px;
+    margin-top: -15px;
 }
 
 #ud h5{
@@ -312,149 +189,246 @@ header{
     margin-left: 15px
 }
 
-/* --------------------SPLIT SPOTIFY-------------------- */
+/* --------------------PAST DATES GRID-------------------- */
 
-.box spotify{
+.past_dates{
     display: grid;
-    align-content: left;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 750px 510px 650px;
     grid-template-areas:
-        "s1"
-        "s2";
+        "pd1"
+        "pd2"
+        "pd3";
 }
 
-.split_spotify {
-    grid-area: s1;
+.past_dates img{
+    padding-bottom: 40px;
+}
+
+/* --------------------1ST PAST DATE-------------------- */
+
+#pd1{
+    grid-area: pd1;
     display: grid;
-    align-content: left;
-    grid-template-columns: 320px 320px;
-    grid-template-rows: repeat(8, 64px);
-    grid-template-areas: 
-        "ssplit info"
-        "ssplit info"
-        "ssplit plug"
-        "ssplit plug"
-        "ssplit plug"
-        ". plug"
-        ". plug"
-        ". plug"
-        ". plug";
-    margin-top: 50px;
-    margin-bottom: 10px;
+    grid-template-columns: 475px 300px;
+    grid-template-rows: repeat(5, 75px);
+    grid-template-areas:
+        "title2 ."
+        "photo2 date2"
+        "photo2 location2"
+        "photo2 see_location2"
+        "photo2 .";
+    padding-bottom: 40px; 
 }
 
-#ssplitimg{
-    grid-area: ssplit;
+#pd_photo1{
+    grid-area: photo2;
+    width: 475px;
+    height: 595px;
     grid-column: 1/2;
-    grid-row: 1/6;
+    grid-row: 2/5;
+    margin-top: 20px;
 }
 
-#sep_name {
-    grid-area: info;
-    grid-row: 1/2;
-    padding-left: 15px;
-}
-
-#syear {
-    grid-area: info;
-    grid-row: 2/3;
-    padding-left: 15px;
-}
-
-#plug {
-    grid-area: plug;
-    grid-column: 2/3;
-    grid-row: 3/8;
-    margin-top: -35px;
-    padding-left: 15px;
-}
-
-/* --------------------JOY SPOTIFY-------------------- */
-
-.joy_spotify {
-    grid-area: s2;
-    display: grid;
-    align-content: left;
-    grid-template-columns: 320px 320px;
-    grid-template-rows: repeat(9, 64px);
-    grid-template-areas: 
-        "sjoy info2"
-        "sjoy info2"
-        "sjoy plug2"
-        "sjoy plug2"
-        "sjoy plug2"
-        ". plug2"
-        ". plug2"
-        ". plug2"
-        ". plug2";
-}
-
-#sjoyimg{
-    grid-area: sjoy;
+#pd1 h2 {
+    grid-area: title2;
     grid-column: 1/2;
-    grid-row: 1/6;
-}
-
-#sep_name2 {
-    grid-area: info2;
     grid-row: 1/2;
-    padding-left: 15px;
 }
 
-#syear2 {
-    grid-area: info2;
-    grid-row: 2/3;
-    padding-left: 15px;
-}
-
-#plug2 {
-    grid-area: plug2;
+#pd1 h3 {
+    grid-area: date2;
     grid-column: 2/3;
-    grid-row: 3/9;
-    margin-top: -35px;
-    padding-left: 15px;
+    grid-row: 2/3;
+    margin-left: 30px;
 }
 
-/* --------------------YOUTUBE CSS-------------------- */
+#pd1 h4{
+    grid-area: location2;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-left: 30px;
+    margin-top: -15px;
+}
 
-.e {
-    grid-area: youtube;
+#pd1 h5{
+    grid-area: see_location2;
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin-top: 150px;
+    margin-left: 10px
+}
+
+/* --------------------2ND PAST DATE-------------------- */
+
+#pd2{
+    grid-area: pd2;
     display: grid;
-    align-content: left;
-    grid-template-columns: 150px 150px;
-    grid-template-rows: 150px 312px;
+    grid-template-columns: 475px 300px;
+    grid-template-rows: repeat(3, 150px);
+    grid-template-areas:
+        "photo3 pd2_1"
+        "photo3 pd2_2"
+        "photo3 pd2_3";
+    padding-bottom: 40px;
+}
+
+#pd2_1{
+    grid-area: pd2_1;
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
     grid-template-areas: 
-        "title ylink"
-        "video video";
-    padding-top: 0px;
+        "date3_1"
+        "location3_1"
+        "see_location3_1";
+}
+
+#pd_photo2{
+    grid-area: photo3;
+    width: 475px;
+    height: 475px;
+    grid-column: 1/2;
+    grid-row: 1/10;
+}
+
+#pd2_1 h3 {
+    grid-area: date3_1;
+    grid-row: 1/2;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+#pd2_1 h4 {
+    grid-area: location3_1;
+    grid-row: 2/3;
+    margin-left: 30px;
+    margin-top: 0px;
+}
+
+#pd2_1 h5{
+    grid-area: see_location3_1;
+    grid-row: 3/4;
+    margin-left: 10px;
+    margin-top: -30px;
+}
+
+#pd2_2{
+    grid-area: pd2_2;
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    grid-template-areas: 
+        "date3_2"
+        "location3_2"
+        "see_location3_2";
+}
+
+#pd2_2 h3 {
+    grid-area: date3_2;
+    grid-row: 1/2;
+    margin-left: 30px;
+    margin-top: 0px;
+}
+
+#pd2_2 h4 {
+    grid-area: location3_2;
+    grid-row: 2/3;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+#pd2_2 h5{
+    grid-area: see_location3_2;
+    grid-row: 3/4;
+    margin-left: 10px;
+    margin-top: -45px;
+}
+
+#pd2_3{
+    grid-area: pd2_3;
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    grid-template-areas: 
+        "date3_3"
+        "location3_3"
+        "see_location3_3";
+}
+
+#pd2_3 h3 {
+    grid-area: date3_3;
+    grid-row: 1/2;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+#pd2_3 h4 {
+    grid-area: location3_3;
+    grid-row: 2/3;
+    margin-left: 30px;
+    margin-top: -30px;
+}
+
+#pd2_3 h5{
+    grid-area: see_location3_3;
+    grid-row: 3/4;
+    margin-left: 10px;
+    margin-top: -67px;
+}
+
+/* --------------------3RD PAST DATE-------------------- */
+
+#pd3{
+    grid-area: pd3;
+    display: grid;
+    grid-template-columns: 475px 300px;
+    grid-template-rows: repeat(5, 75px);
+    grid-template-areas:
+        "photo3 date3"
+        "photo3 location3"
+        "photo3 see_location3"
+        "photo3 ."
+        "photo3 .";
+    padding-bottom: 40px; 
+}
+
+#pd_photo3{
+    grid-area: photo3;
+    width: 475px;
+    height: 615px;
+    grid-column: 1/2;
+    grid-row: 1/5;
+}
+
+#pd3 h3 {
+    grid-area: date2;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-left: 30px;
+}
+
+#pd3 h4{
+    grid-area: location2;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: 30px;
+    margin-top: -15px;
+}
+
+#pd3 h5{
+    grid-area: see_location2;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-left: 10px;
     margin-top: -70px;
-    border: solid; 
-    border-color: #FFF;
-    border-width: 1px 0px 0px 0px;
 }
 
-#name{
-    grid-area: title;
-    grid-column: 1/2;
-    grid-row: 1/2;
+/* --------------------MORE DATES CSS-------------------- */
+
+.more_dates h2{
+    margin: 0px;
 }
 
-#ylink {
-    grid-area: ylink;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    padding-top: 50px;
-    margin-left: -40px;
-}
-
-#video {
-    grid-area: video;
-    grid-row: 2/3;
-    margin-top: -60px;
-}
-
-.e a: hovered {
-    text-decoration: underline;
+.more_dates a{
+    font-size: 25px;
 }
 
 /* --------------------FOOTER CSS-------------------- */

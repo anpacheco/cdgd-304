@@ -1,0 +1,345 @@
+/* --------------------MAIN CSS-------------------- */
+
+body {
+    background: #000;
+    margin: 0;
+}
+
+content{
+    margin-left: 80px;
+}
+
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 20px;
+}
+
+a:hover { 
+    text-decoration: underline; 
+}
+
+.p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.box {
+    background-color: #000;
+    color: #fff;
+    padding: 0px 20px 20px 20px;
+
+}
+
+/* --------------------H STYLES-------------------- */
+
+h1 {
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 9vw;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    color: #FFF;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #FFF;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    margin-top: -12px;
+    color: #FFF;
+}
+
+h5 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* --------------------HEADER CSS-------------------- */
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "logo links";
+    margin: 20px 65px -30px 30px;
+}
+
+.logo_1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 0;
+    margin-top: 15px;
+    margin-left: 30px;
+    background: url(Content/FA_logo_nav.png) no-repeat;
+    width: 150px;
+    height: 40px;
+}
+
+.links {
+    grid-column: 3/10;
+    grid-row: 1/2;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.current_page{
+    background-color: #FFF;
+    color: #000;
+    padding: 5px 10px;
+    margin: 15px;
+}
+
+.current_page:hover{
+    text-decoration: none;
+}
+
+/* --------------------CONTENT CSS-------------------- */
+
+.content{
+    margin-left: 80px;
+    padding-left: 0px;
+}
+
+.content img{
+    padding: 0px 25px 25px 0px;
+}
+
+.content p{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+/* --------------------MERCHANDISE CSS-------------------- */
+
+#merchandise{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 350px);
+    grid-template-areas:
+        "m1 m2 m3 m4"
+        "m5 m6 . .";
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+#merch_1{
+    grid-area: m1;
+    width: 245px;
+    height: 245px;
+    display: grid;
+    grid-template-rows: 245px 60px 30px;
+    grid-template-areas:
+        "photo1"
+        "title1"
+        "price1";
+}
+
+#merch_1 img{
+    grid-area: photo1;
+}
+
+#merch_1 h3{
+    grid-area: title1;
+}
+
+#merch_1 h4{
+    grid-area: price1;
+}
+
+#merch_2{
+    grid-area: m2;
+    width: 245px;
+    height: 245px;
+    display: grid;
+    grid-template-rows: 245px 60px 30px;
+    grid-template-areas:
+        "photo2"
+        "title2"
+        "price2";
+}
+
+#merch_2 img{
+    grid-area: photo2;
+}
+
+#merch_2 h3{
+    grid-area: title2;
+}
+
+#merch_2 h4{
+    grid-area: price2;
+}
+
+#merch_3{
+    grid-area: m3;
+    width: 245px;
+    height: 245px;
+    display: grid;
+    grid-template-rows: 245px 60px 30px;
+    grid-template-areas:
+        "photo3"
+        "title3"
+        "price3";
+}
+
+#merch_3 img{
+    grid-area: photo3;
+}
+
+#merch_3 h3{
+    grid-area: title3;
+}
+
+#merch_3 h4{
+    grid-area: price3;
+}
+
+#merch_4{
+    grid-area: m4;
+    width: 245px;
+    height: 245px;
+    display: grid;
+    grid-template-rows: 245px 60px 30px;
+    grid-template-areas:
+        "photo4"
+        "title4"
+        "price4";
+}
+
+#merch_4 img{
+    grid-area: photo4;
+}
+
+#merch_4 h3{
+    grid-area: title4;
+}
+
+#merch_4 h4{
+    grid-area: price4;
+}
+
+#merch_5{
+    grid-area: m5;
+    width: 245px;
+    height: 245px;
+    display: grid;
+    grid-template-rows: 245px 60px 30px;
+    grid-template-areas:
+        "photo5"
+        "title5"
+        "price5";
+}
+
+#merch_5 img{
+    grid-area: photo5;
+}
+
+#merch_5 h3{
+    grid-area: title5;
+}
+
+#merch_5 h4{
+    grid-area: price5;
+}
+
+#merch_6{
+    grid-area: m6;
+    width: 245px;
+    height: 245px;
+    display: grid;
+    grid-template-rows: 245px 60px 30px;
+    grid-template-areas:
+        "photo6"
+        "title6"
+        "price6";
+}
+
+#merch_6 img{
+    grid-area: photo6;
+}
+
+#merch_6 h3{
+    grid-area: title6;
+}
+
+#merch_6 h4{
+    grid-area: price6;
+}
+
+/* --------------------FOOTER CSS-------------------- */
+
+.footer{
+    width: 100%;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "label . . . sm_links";
+    padding: 10px 0px 10px 85px;
+    margin-top: 10px;
+    border: solid;
+    border-color: #FFF;
+    border-width: 1px 0px 0px 0px;
+}
+
+#label{
+    grid-area: label;
+    grid-column: 1/2;
+}
+
+#sm_links{
+    grid-area: sm_links;
+    grid-column: 5/6;
+}
+
+.footer img{
+    margin: -10px;
+}
+
+.footer p{
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer li {
+    float: left;
+}

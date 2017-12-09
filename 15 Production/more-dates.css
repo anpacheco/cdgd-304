@@ -1,0 +1,183 @@
+/* --------------------MAIN CSS-------------------- */
+
+body {
+    background: #000;
+    margin: 0;
+}
+
+content{
+    margin-left: 80px;
+}
+
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 20px;
+}
+
+a:hover { 
+    text-decoration: underline; 
+}
+
+.p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.box {
+    background-color: #000;
+    color: #fff;
+    padding: 0px 20px 20px 20px;
+
+}
+
+/* --------------------H STYLES-------------------- */
+
+h1 {
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 9vw;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    color: #FFF;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #FFF;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    margin-top: -12px;
+    color: #FFF;
+}
+
+h5 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* --------------------HEADER CSS-------------------- */
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "logo links";
+    margin-top: 20px;
+    margin-bottom: -50px;
+}
+
+.logo_1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 0;
+    margin-top: 15px;
+    margin-left: 30px;
+    background: url(Content/FA_logo_nav.png) no-repeat;
+    width: 150px;
+    height: 40px;
+}
+
+.links {
+    grid-column: 3/10;
+    grid-row: 1/2;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.current_page{
+    background-color: #FFF;
+    color: #000;
+    padding: 5px 10px;
+    margin: 15px;
+}
+
+.current_page:hover{
+    text-decoration: none;
+}
+
+/* --------------------CONTENT CSS-------------------- */
+
+.content{
+    margin-left: 80px;
+    padding-left: 0px;
+}
+
+.content img{
+    padding: 0px 25px 25px 0px;
+}
+
+/* --------------------FOOTER CSS-------------------- */
+
+.footer{
+    width: 100%;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "label . . . sm_links";
+    padding: 10px 0px 10px 85px;
+    margin-top: 10px;
+    border: solid;
+    border-color: #FFF;
+    border-width: 1px 0px 0px 0px;
+}
+
+#label{
+    grid-area: label;
+    grid-column: 1/2;
+}
+
+#sm_links{
+    grid-area: sm_links;
+    grid-column: 5/6;
+}
+
+.footer img{
+    margin: -10px;
+}
+
+.footer p{
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer li {
+    float: left;
+}
