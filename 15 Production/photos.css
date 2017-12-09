@@ -444,9 +444,9 @@ header{
     width: 100%;
     grid-area: footer;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 300px 450px 100px;
     grid-template-areas: 
-        "label . . . sm_links";
+        "label . sm_links";
     padding: 10px 0px 10px 85px;
     margin-top: 10px;
     padding-right: 30px;

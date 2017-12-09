@@ -94,5 +94,16 @@
                 </div>
             </footer>
         </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="java/masonry-docs/masonry.pkgd.min.js"></script>
+        <script type="text/javascript">
+        var $grid = $('.more-dates').masonry({
+            
+        });
+            $grid.imagesLoaded().progress( function(){
+                $grid.masonry('layout');
+            });
+        </script>
     </body>
 </html>

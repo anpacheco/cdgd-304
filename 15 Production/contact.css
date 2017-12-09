@@ -1,0 +1,233 @@
+/* --------------------MAIN CSS-------------------- */
+
+body {
+    background: #000;
+    margin: 0;
+}
+
+content{
+    margin-left: 60px;
+}
+
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+a:hover { 
+    text-decoration: underline; 
+}
+
+.p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 10% [repeat 10];
+    grid-template-rows: 10% [repeat 10];
+    background-color: #000;
+    margin-right: 30px;
+}
+
+.box {
+    background-color: #000;
+    color: #fff;
+    padding: 0px 20px 20px 20px;
+
+}
+
+/* --------------------H STYLES-------------------- */
+
+h1 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 9vw;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    margin-top: -12px
+}
+
+/* --------------------HEADER CSS-------------------- */
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "logo links";
+    margin-top: 20px;
+    margin-bottom: -50px;
+}
+
+.logo_1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 0;
+    margin-top: 15px;
+    margin-left: 30px;
+    background: url(Content/FA_logo_nav.png) no-repeat;
+    width: 150px;
+    height: 40px;
+}
+
+.links {
+    grid-column: 3/10;
+    grid-row: 1/2;
+    font-family: 'Lato', sans-serif;
+}
+
+.links a{
+    margin: 20px
+}
+
+.current_page{
+    background-color: #FFF;
+    color: #000;
+    padding: 5px 10px;
+    margin:  0px 15px 15px 15px;
+}
+
+.current_page:hover{
+    text-decoration: none;
+}
+
+/* --------------------EMAILS CSS-------------------- */
+
+.email {
+    display: grid;
+    align-content: left;
+    grid-template-rows: 80px 100px 425px;
+    grid-template-areas:
+        "c_header"
+        "bp"
+        "m";
+    margin-top: 30px;
+}
+
+.email h2{
+    grid-area: c_header;
+}
+
+#booking{
+    grid-area: bp;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "booktitle"
+        "booklink";
+}
+
+#booking h3{
+    grid-area: booktitle;
+}
+
+#booking h4 {
+    grid-area: booklink;
+}
+
+#manage{
+    grid-area: m;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "mtitle"
+        "mlink";
+}
+
+#manage h3{
+    grid-area: mtitle;
+}
+
+#manage h4 {
+    grid-area: mlink;
+    margin-top: -160px;
+}
+
+.email a: hovered {
+    text-decoration: underline;
+}
+
+/* --------------------FOOTER CSS-------------------- */
+
+.footer{
+    width: 100%;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "label . . . sm_links";
+    padding: 10px 0px 10px 85px;
+    margin-top: 10px;
+    border: solid;
+    border-color: #FFF;
+    border-width: 1px 0px 0px 0px;
+}
+
+.footer a{
+    padding: 20px;
+}
+
+#label{
+    grid-area: label;
+    grid-column: 1/2;
+}
+
+#sm_links{
+    grid-area: sm_links;
+    grid-column: 5/6;
+}
+
+.footer img{
+    margin: -10px;
+}
+
+.footer p{
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer li {
+    float: left;
+}
